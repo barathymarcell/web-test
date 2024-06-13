@@ -1,0 +1,25 @@
+package org.example.demo1;
+
+public enum Circles {
+    circle_0(0),
+    circle_1(1),
+    circle_2(1),
+    circle_3(1),
+    circle_4(1),
+    circle_5(1),
+    circle_6(1);
+
+    public int value;
+
+    Circles(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int newValue) {
+        this.value = newValue;
+    }
+}

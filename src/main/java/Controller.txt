@@ -1,0 +1,77 @@
+package org.example.demo1;
+
+import javafx.fxml.FXML;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+import javafx.scene.text.Text;
+
+public class Controller {
+    @FXML
+    Color BLUE = Color.BLUE;
+    @FXML
+    Color WHITE = Color.WHITE;
+    @FXML
+    Circle circle_1, circle_2, circle_3, circle_4, circle_5, circle_6, circle_0;
+    @FXML
+    Text circle_1_text, circle_2_text, circle_3_text, circle_4_text, circle_5_text, circle_6_text, circle_0_text;
+    Model model = new Model();
+
+    @FXML
+    private void onMouseClicked(MouseEvent mouseevent) {
+        Circle circle = (Circle) mouseevent.getSource();
+        if (circle.getFill() == Color.BLUE) {
+            makeMoveIfLegal(circle);
+        } else {
+            System.out.println("naah");
+        }
+    }
+
+    private void makeMoveIfLegal(Circle circle) {
+        if (model.isLegalMove(circle.getId())) {
+            model.makeMove(circle.getId());
+            System.out.println("csere");
+            changeCircleColors();
+        }
+        else {
+            System.out.println("naah");
+        }
+    }
+    public void changeCircleColors() {
+        if (Circles.circle_0.getValue() == 0) {
+            circle_0.setFill(WHITE);
+        } else {
+            circle_0.setFill(BLUE);
+        }
+        if (Circles.circle_1.getValue() == 0) {
+            circle_1.setFill(WHITE);
+        } else {
+            circle_1.setFill(BLUE);
+        }
+        if (Circles.circle_2.getValue() == 0) {
+            circle_2.setFill(WHITE);
+        } else {
+            circle_2.setFill(BLUE);
+        }
+        if (Circles.circle_3.getValue() == 0) {
+            circle_3.setFill(WHITE);
+        } else {
+            circle_3.setFill(BLUE);
+        }
+        if (Circles.circle_4.getValue() == 0) {
+            circle_4.setFill(WHITE);
+        } else {
+            circle_4.setFill(BLUE);
+        }
+        if (Circles.circle_5.getValue() == 0) {
+            circle_5.setFill(WHITE);
+        } else {
+            circle_5.setFill(BLUE);
+        }
+        if (Circles.circle_6.getValue() == 0) {
+            circle_6.setFill(WHITE);
+        } else {
+            circle_6.setFill(BLUE);
+        }
+    }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo1.Controller">
+   <children>
+      <Circle fx:id="circle_0" fill="WHITE" layoutX="300.0" layoutY="200.0" onMouseClicked="#onMouseClicked" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle_5" fill="BLUE" layoutX="214.0" layoutY="200.0" onMouseClicked="#onMouseClicked" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle_2" fill="BLUE" layoutX="386.0" layoutY="200.0" onMouseClicked="#onMouseClicked" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle_6" fill="BLUE" layoutX="254.0" layoutY="120.0" onMouseClicked="#onMouseClicked" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle_1" fill="BLUE" layoutX="346.0" layoutY="120.0" onMouseClicked="#onMouseClicked" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle_4" fill="BLUE" layoutX="254.0" layoutY="280.0" onMouseClicked="#onMouseClicked" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle_3" fill="BLUE" layoutX="346.0" layoutY="280.0" onMouseClicked="#onMouseClicked" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fx:id="circle_1_text" fill="WHITE" layoutX="334.0" layoutY="130.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" wrappingWidth="23.26873779296875">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="circle_2_text" fill="WHITE" layoutX="374.0" layoutY="210.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" wrappingWidth="23.26873779296875">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="circle_3_text" fill="WHITE" layoutX="334.0" layoutY="290.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="6" textAlignment="CENTER" wrappingWidth="23.26873779296875">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="circle_4_text" fill="WHITE" layoutX="242.0" layoutY="289.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="23.26873779296875">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="circle_5_text" fill="WHITE" layoutX="202.0" layoutY="209.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" wrappingWidth="23.26873779296875">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="circle_6_text" fill="WHITE" layoutX="242.0" layoutY="130.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" wrappingWidth="23.26873779296875">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="circle_0_text" fill="WHITE" layoutX="288.0" layoutY="210.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="23.26873779296875">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
